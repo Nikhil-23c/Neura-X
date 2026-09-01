@@ -48,10 +48,14 @@ The **Local Database Question-Answering System** is an AI-powered enterprise ass
 ## 🏃 Quick Start
 
 ### 1. One-Click Launch (Windows)
-Double-click `start.bat` in the root folder, or run in terminal:
+Double-click `run_project.bat` (or `start.bat`) in the root folder `D:\Neura X`.  
+This script will automatically:
+1. Check and install all dependencies.
+2. Launch the FastAPI server on port 8000.
+3. Automatically open `http://localhost:8000` in your default browser!
 
 ```powershell
-cd C:\Users\hp\.gemini\antigravity\scratch\local-db-qa-system\backend
+cd "D:\Neura X\backend"
 python run.py
 ```
 
