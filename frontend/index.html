@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEURA X — Local Database Question-Answering System (PS7)</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#ecfeff',
+              100: '#cffafe',
+              400: '#22d3ee',
+              500: '#06b6d4',
+              600: '#0891b2',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React 18 & ReactDOM -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  
+  <!-- Babel Standalone for in-browser JSX parsing -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Chart.js for Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body class="bg-[#090d16] text-slate-100 antialiased selection:bg-cyan-500 selection:text-white">
+  <div id="root">
+    <!-- Initial Loading State while React mounts -->
+    <div style="min-height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; background-color: #090d16; color: #94a3b8; font-family: sans-serif;">
+      <div style="width: 48px; height: 48px; border: 3px solid #1e293b; border-top-color: #06b6d4; border-radius: 50%; animation: spin 1s linear infinite;"></div>
+      <p style="margin-top: 16px; font-weight: 600; color: #f8fafc; font-size: 16px;">Loading NEURA X Database QA Assistant...</p>
+      <p style="font-size: 12px; color: #64748b; margin-top: 4px;">PS7 • HackWithAMYPO 2026</p>
+    </div>
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
+  </div>
+
+  <!-- React App Script -->
+  <script type="text/babel" src="/static/app.js"></script>
+</body>
+</html>
